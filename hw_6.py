@@ -20,7 +20,7 @@ def binary_search(sorted_alist, value):
             last = first
             result_ok = True
             pos = middle
-        elif value == sorted_alist[middle]:
+        elif value > sorted_alist[middle]:
             first = middle + 1
         else:
             last = middle - 1
