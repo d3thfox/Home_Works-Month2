@@ -8,6 +8,7 @@ def selection_sort(alist):
     return alist
 
 
+
 def binary_search(sorted_alist, value):
     n = len(sorted_alist)
     result_ok = False
@@ -34,10 +35,11 @@ def binary_search(sorted_alist, value):
 
 
 
+
 usorted_list = [1, 4, 6, 3, 2, 9]
 sorted_list = selection_sort(usorted_list)
 
-binary_search(sorted_list,3)
+binary_search(sorted_list,9)
 
 
 
