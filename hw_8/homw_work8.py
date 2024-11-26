@@ -66,20 +66,20 @@ def insert_student(db_name, student):
         print(error)
 
 def add_student():
-    insert_student(database_name, ('Alex', 'Messer', 2))
+    insert_student(database_name, ('Alex', 'Messer', 4))
     insert_student(database_name, ('Olivia', 'Taylor', 1))
-    insert_student(database_name, ('Liam', 'Brown', 3))
+    insert_student(database_name, ('Liam', 'Brown', 5))
     insert_student(database_name, ('Emma', 'Wilson', 2))
-    insert_student(database_name, ('Noah', 'Johnson', 1))
-    insert_student(database_name, ('Sophia', 'Clark', 3))
-    insert_student(database_name, ('Lucas', 'Lee', 2))
+    insert_student(database_name, ('Noah', 'Johnson', 8))
+    insert_student(database_name, ('Sophia', 'Clark', 6))
+    insert_student(database_name, ('Lucas', 'Lee', 3))
     insert_student(database_name, ('Mia', 'Walker', 1))
     insert_student(database_name, ('Ethan', 'Hall', 3))
     insert_student(database_name, ('Ava', 'Lewis', 2))
-    insert_student(database_name, ('James', 'Young', 1))
-    insert_student(database_name, ('Isabella', 'King', 3))
+    insert_student(database_name, ('James', 'Young', 5))
+    insert_student(database_name, ('Isabella', 'King', 9))
     insert_student(database_name, ('Benjamin', 'Wright', 2))
-    insert_student(database_name, ('Charlotte', 'Hill', 1))
+    insert_student(database_name, ('Charlotte', 'Hill', 8))
     insert_student(database_name, ('Elijah', 'Scott', 3))
 
 
@@ -87,7 +87,7 @@ def add_student():
 
 
 database_name = 'homw8.db'
-
+#
 # create_tables(database_name, sql_create_table_c)
 # insert_country(database_name, ('Russia',))
 # insert_country(database_name, ('Usa',))
@@ -102,5 +102,5 @@ database_name = 'homw8.db'
 # insert_city(database_name, ('Bor', '856000000', 3))
 # create_tables(database_name, sql_create_table_stu)
 # add_student()
-
-
+#
+#
