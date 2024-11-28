@@ -19,7 +19,7 @@ def select_city(db_name):
 
 
 def select_stu(db_name, c_id):
-    sql = '''SELECT students.first_name, students.last_name 
+    sql = '''SELECT students.first_name, students.last_name,city.area
              FROM students
              JOIN city ON students.city_id = city.id
              WHERE city.id = ?'''
@@ -31,7 +31,7 @@ def select_stu(db_name, c_id):
 
             if students:
                 for student in students:
-                    print(f"ИМЯ - {student[0]}, ФАМИЛИЯ - {student[1]}")
+                    print(f"ИМЯ - {student[0]}, ФАМИЛИЯ - {student[1]} , Площадь города - {student[2]}")
             else:
                 print("В данном городе нет студентов.")
     except sqlite3.Error as error:
