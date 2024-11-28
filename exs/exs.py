@@ -88,11 +88,21 @@ def select_products(db_name, id):
 
 
 def product_list():
-    print('Вы можете отобразить список продуктов по выбранному id магазина из перечня магазинов ниже,'
-          ' для выхода из программы введите цифру 0')
-    select_store(database_name)
-    user_id = int(input('Введите ваш айди'))
-    select_products(database_name, user_id)
+    while True:
+        try:
+            print('Вы можете отобразить список продуктов по выбранному id магазина из перечня магазинов ниже,'
+                  ' для выхода из программы введите цифру 0')
+            select_store(database_name)
+            user_id = int(input('Введите ваш айди'))
+            select_products(database_name, user_id)
+
+            if user_id == 0:
+                print('Выход из программы ')
+                break
+        except:
+            print('Введите значение в диопазоне')
+
+
 
 
 database_name = 'exs.db'
